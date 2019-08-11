@@ -31,6 +31,7 @@
 		3C905FC12025BEBB0084BA63 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1768312025801E0031FEA9 /* TabViewController.swift */; };
 		3CD4457A202ACFC500DD3CCB /* TabViewContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD44579202ACFC500DD3CCB /* TabViewContainerViewController.swift */; };
 		3CD4457B202ACFC700DD3CCB /* TabViewContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD44579202ACFC500DD3CCB /* TabViewContainerViewController.swift */; };
+		C965C4D622FFD32300CAA88B /* NSUserActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965C4D522FFD32200CAA88B /* NSUserActivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		3C857EB72029626A0082D945 /* TabViewTabCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewTabCollectionViewLayout.swift; sourceTree = "<group>"; };
 		3C905FB12025BEAF0084BA63 /* liblibTabView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibTabView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD44579202ACFC500DD3CCB /* TabViewContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewContainerViewController.swift; sourceTree = "<group>"; };
+		C965C4D522FFD32200CAA88B /* NSUserActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSUserActivity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 		3C1768372025852A0031FEA9 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				C965C4D522FFD32200CAA88B /* NSUserActivity.swift */,
 				3C176833202581BE0031FEA9 /* NSLayoutConstraint+Custom.swift */,
 				3C17683E202585D80031FEA9 /* UIBarButtonItem+View.swift */,
 			);
@@ -346,6 +349,7 @@
 				3C17683D202585920031FEA9 /* TabViewTabCollectionView.swift in Sources */,
 				3C17683B2025855C0031FEA9 /* TabViewBar.swift in Sources */,
 				3C857EB82029626A0082D945 /* TabViewTabCollectionViewLayout.swift in Sources */,
+				C965C4D622FFD32300CAA88B /* NSUserActivity.swift in Sources */,
 				3C1768422025A33C0031FEA9 /* NavigationItemObserver.swift in Sources */,
 				3C1768322025801E0031FEA9 /* TabViewController.swift in Sources */,
 				3CD4457A202ACFC500DD3CCB /* TabViewContainerViewController.swift in Sources */,

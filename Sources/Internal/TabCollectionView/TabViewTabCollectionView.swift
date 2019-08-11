@@ -114,9 +114,15 @@ extension TabViewTabCollectionView: UICollectionViewDragDelegate {
     }
 
     func collectionView(_ collectionView: UICollectionView, itemsForBeginning session: UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {
-        let dragItem = UIDragItem.init(itemProvider: NSItemProvider.init())
+        
+        let provider = NSItemProvider()
+        let userActivity = NSUserActivity(activityType: "net.ianmcdowell.TabView.tab")
+        userActivity.viewController = viewControllers[indexPath.item]
+        provider.registerObject(userActivity, visibility: .all)
+        
+        let dragItem = UIDragItem(itemProvider: provider)
         dragItem.localObject = viewControllers[indexPath.item]
-
+        
         // Render the cell in the given size, so even if it is shrunk (on iPad), it will be a reasonable size.
         let size = CGSize.init(width: 120, height: collectionView.bounds.height)
         let snapshot = self.snapshotCell(at: indexPath, withSize: size)
@@ -149,7 +155,10 @@ extension TabViewTabCollectionView: UICollectionViewDragDelegate {
     }
 
     func collectionView(_ collectionView: UICollectionView, dragSessionIsRestrictedToDraggingApplication session: UIDragSession) -> Bool {
-        // Don't let tabs escape the current app.
+        return false
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, dragSessionAllowsMoveOperation session: UIDragSession) -> Bool {
         return true
     }
 }
