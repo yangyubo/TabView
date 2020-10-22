@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TabView.xcodeproj">
+      location = "self:/Users/yang/workspace/CodinnCode/TabView/Sample/TabViewSample.xcodeproj">
    </FileRef>
 </Workspace>

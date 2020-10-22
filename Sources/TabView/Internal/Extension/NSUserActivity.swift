@@ -6,7 +6,7 @@
 //  Copyright © 2019 Ian McDowell. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 fileprivate struct UserActivityObjectHolder {
     
